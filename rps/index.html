@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock Papers Scissors</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/name.css" />
+</head>
+
+<body>
+    <div class="body" class="container">
+        <header class="header">
+            <h2>Rock Papers Scissors</h2>
+            <div class="highscore"></div>
+            <button id="restart" class="restart-btn">Restart Game</button>
+
+            <div id="score" class="score">
+                <p>Player: 0</p>
+                <p id="comp">Comp: 0</p>
+            </div>
+        </header>
+        <h2 id="select">Make Your Selection</h2>
+        <div class="choices">
+            <i id="rock" class="choice fas fa-hand-rock fa-10x"></i>
+            <i id="paper" class="choice fas fa-hand-paper fa-10x"></i>
+            <i id="scissors" class="choice fas fa-hand-scissors fa-10x"></i>
+        </div>
+        <div class="modal">
+            <div id="result" class="modal-content">
+                <h2>YOU WON</h2>
+                <i id="paper" class="paperHand fas fa-hand-paper fa-10x"></i>
+                <p>Computer Chose Rock</p>
+            </div>
+        </div>
+        <div class="inputField">
+            <form id="myform">
+                <h2>Write Your Name</h2>
+                <div>
+                    <label>Your Name:</label>
+                    <input class="name-field" autocomplete="off" type="text" id="name" placeholder="Your Name" />
+                </div>
+                <input class="btn" type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/294f177ac8.js"></script>
+    <script src="JavaScript/main.js"></script>
+</body>
+
+</html>

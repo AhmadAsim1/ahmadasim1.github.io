@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+body {
+  color: #313233;
+  line-height: 1.6;
+  background: #dcdcdc;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.easter {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.easter:hover {
+  color: beige;
+  background: black;
+}
+
+.easter a:hover {
+  color: beige;
+  background: black;
+}
+
+.easter a {
+  text-decoration: none;
+  color: #313233;
+}
+
+.restart-btn {
+  display: none;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.4rem 1.3rem;
+  outline: none;
+  border: none;
+  background-color: #dcdcdc;
+  margin-bottom: 1rem;
+  margin-top: 0.9rem;
+  cursor: pointer;
+}
+
+.restart-btn:hover {
+  background-color: #313233;
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.header h2 {
+  font-size: 40px;
+}
+
+.score {
+  display: grid;
+  font-size: 1.3rem;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+}
+
+.score p:first-child {
+  background-color: #003699;
+}
+
+#comp {
+  background-color: rgb(248, 41, 41);
+}
+
+#select {
+  text-align: center;
+}
+
+.choices {
+  display: grid;
+  text-align: center;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+}
+
+.choice {
+  cursor: pointer;
+}
+
+.paperHand {
+  color: red;
+}
+
+.choice:hover {
+  color: #003699;
+  transition: 0.25s;
+}
+
+.inputField {
+  text-align: center;
+}
+
+.inputField h2 {
+  font-size: 26px;
+}
+
+.name-field {
+  width: 200px;
+  border: solid black 1px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.name-field:focus {
+  outline: none;
+}
+
+.btn {
+  border: 1px black solid;
+  width: 100px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  width: 130px;
+  transition: ease 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .choices i {
+    font-size: 100px;
+  }
+  .inputField {
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    margin: 0px;
+  }
+  body {
+    margin: 0px;
+  }
+  .header h2 {
+    font-size: 30px;
+  }
+
+  .score {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .choices {
+    gap: 1px;
+    margin-left: 0px;
+  }
+
+  .choices i {
+    font-size: 80px;
+  }
+}
